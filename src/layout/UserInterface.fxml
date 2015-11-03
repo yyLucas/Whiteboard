@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.ClientController">
+	<left>
+		<FlowPane prefHeight="200.0" prefWidth="150.0"
+			BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</BorderPane.margin>
+			<children>
+				<GridPane alignment="CENTER" prefHeight="350.0" prefWidth="140.0"
+					style="-fx-border-color: BLACK;">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+							prefWidth="100.0" />
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+							prefWidth="100.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+					</rowConstraints>
+					<FlowPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</FlowPane.margin>
+					<children>
+						<Button fx:id="btnGrey" mnemonicParsing="false" prefHeight="100.0"
+							prefWidth="100.0"
+							style="-fx-background-color: #B5B1B1; -fx-border-color: BLACK;">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnBlack" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #000000; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnBrown" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #8B1A1A; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1" GridPane.rowIndex="1">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnGold" mnemonicParsing="false" prefHeight="100.0"
+							prefWidth="100.0"
+							style="-fx-background-color: #FFC125; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1" GridPane.rowIndex="3">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnGreen" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #458B00; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1" GridPane.rowIndex="4">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnDarkCyan" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #7AC5CD; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1" GridPane.rowIndex="5">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnDarkBlue" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #00008B; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1" GridPane.rowIndex="6">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnPurple" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #68228B; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1" GridPane.rowIndex="7">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnChocolate" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #CD6600; -fx-border-color: BLACK;"
+							GridPane.columnIndex="1" GridPane.rowIndex="2">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnOrange" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #FF8C00; -fx-border-color: BLACK;"
+							GridPane.rowIndex="2">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnViolet" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #BF3EFF; -fx-border-color: BLACK;"
+							GridPane.rowIndex="7">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnBlue" mnemonicParsing="false" prefHeight="100.0"
+							prefWidth="100.0"
+							style="-fx-background-color: #0000FF; -fx-border-color: BLACK;"
+							GridPane.rowIndex="6">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnCyan" mnemonicParsing="false" prefHeight="100.0"
+							prefWidth="100.0"
+							style="-fx-background-color: #98F5FF; -fx-border-color: BLACK;"
+							GridPane.rowIndex="5">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnLime" mnemonicParsing="false" prefHeight="100.0"
+							prefWidth="100.0"
+							style="-fx-background-color: #7FFF00; -fx-border-color: BLACK;"
+							GridPane.rowIndex="4">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnYellow" mnemonicParsing="false"
+							prefHeight="100.0" prefWidth="100.0"
+							style="-fx-background-color: #FFFF00; -fx-border-color: BLACK;"
+							GridPane.rowIndex="3">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+						<Button fx:id="btnRed" mnemonicParsing="false" prefHeight="100.0"
+							prefWidth="100.0" style="-fx-background-color: RED; -fx-border-color: BLACK;"
+							GridPane.rowIndex="1">
+							<GridPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</GridPane.margin>
+						</Button>
+					</children>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</padding>
+				</GridPane>
+				<FlowPane prefHeight="230.0" prefWidth="140.0"
+					style="-fx-border-color: BLACK;">
+					<FlowPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</FlowPane.margin>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+					</padding>
+					<children>
+						<Button fx:id="drawPensil" mnemonicParsing="false"
+							prefHeight="45.0" prefWidth="115.0">
+							<FlowPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</FlowPane.margin>
+						</Button>
+						<Button fx:id="drawCircle" mnemonicParsing="false"
+							prefHeight="45.0" prefWidth="115.0">
+							<FlowPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</FlowPane.margin>
+						</Button>
+						<Button fx:id="drawRectangle" mnemonicParsing="false"
+							prefHeight="45.0" prefWidth="115.0">
+							<FlowPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</FlowPane.margin>
+						</Button>
+						<Button fx:id="btnClear" mnemonicParsing="false" prefHeight="45.0"
+							prefWidth="115.0" text="CLEAR">
+							<FlowPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</FlowPane.margin>
+							<font>
+								<Font size="18.0" />
+							</font>
+						</Button>
+					</children>
+				</FlowPane>
+			</children>
+		</FlowPane>
+	</left>
+	<center>
+		<FlowPane prefHeight="600.0" prefWidth="500.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<Pane prefHeight="350.0" prefWidth="500.0" style="-fx-border-color: BLACK;">
+					<FlowPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</FlowPane.margin>
+					<children>
+						<Canvas fx:id="canvas" height="350.0" width="500.0" />
+					</children>
+				</Pane>
+				<TextArea fx:id="txArea" prefHeight="150.0" prefWidth="500.0"
+					style="-fx-border-color: BLACK;">
+					<FlowPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</FlowPane.margin>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</padding>
+				</TextArea>
+				<TextField fx:id="txField" prefHeight="45.0" prefWidth="400.0"
+					style="-fx-border-color: BLACK;">
+					<FlowPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</FlowPane.margin>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</padding>
+				</TextField>
+				<Button fx:id="btnSend" mnemonicParsing="false" prefHeight="45.0"
+					prefWidth="80.0" text="Send">
+					<FlowPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</FlowPane.margin>
+				</Button>
+			</children>
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</BorderPane.margin>
+			<padding>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</padding>
+		</FlowPane>
+	</center>
+	<right>
+		<ListView fx:id="userList" prefHeight="300.0" prefWidth="115.0"
+			style="-fx-border-color: BLACK;" BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</BorderPane.margin>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</ListView>
+	</right>
+
+</BorderPane>
